@@ -12,6 +12,11 @@
   --foreground: #ededed;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -116,6 +121,14 @@ select:-webkit-autofill:focus {
   color: #ffffff; /* Initial text color */
   transition: color 0.4s ease;
   border: 2px solid transparent;
+  
+  /* Force identical height, shape, and centering properties globally */
+  height: 48px !important;
+  border-radius: 9999px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
 }
 
 .btn-split-window::before,

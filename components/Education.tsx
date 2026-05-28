@@ -58,8 +58,8 @@ export default function EducationClassicProfessional() {
                 <div className="flex-none w-14 h-14 rounded-md bg-gradient-to-br from-[#0b2545] to-[#123a6b] flex items-center justify-center text-white shadow-md">
                   <GraduationCap className="w-6 h-6" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-base sm:text-lg font-serif font-semibold text-[#0b2545] dark:text-white whitespace-nowrap overflow-hidden text-ellipsis">{e.degree}</h3>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base sm:text-lg font-serif font-semibold text-[#0b2545] dark:text-white">{e.degree}</h3>
                   <p className="text-sm text-[#324a6b] dark:text-gray-300 mt-1">{e.institution}</p>
                   <div className="mt-3 flex items-center gap-2 text-sm text-[#6b7e94] dark:text-gray-400">
                     <Calendar className="w-4 h-4" />

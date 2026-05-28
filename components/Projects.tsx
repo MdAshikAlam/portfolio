@@ -232,22 +232,22 @@ export default function ProjectsProfessionalCards() {
                 <p className="mt-4 text-[#324a6b] dark:text-gray-300 text-lg" dangerouslySetInnerHTML={{ __html: visible[0].blurb }} />
 
                 <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <a href={visible[0].github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 px-5 py-3 rounded-xl btn-split-window font-semibold shadow-sm">
+                  <a href={visible[0].github} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow-sm">
                     <Github className="w-5 h-5" />
                     <span>GitHub Repo</span>
                   </a>
 
                    {visible[0].live !== "#" && (
-                    <a href={visible[0].live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold btn-split-window shadow-sm">
-                      View Live App
-                      <ExternalLink className="w-4 h-4" />
+                    <a href={visible[0].live} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow-sm">
+                      <span>View Live App</span>
+                      <ExternalLink className="w-5 h-5" />
                     </a>
                   )}
 
                   {visible[0].liveAdmin && visible[0].liveAdmin !== "#" && (
-                    <a href={visible[0].liveAdmin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold btn-split-window shadow-sm">
-                      Admin Dashboard
-                      <ExternalLink className="w-4 h-4" />
+                    <a href={visible[0].liveAdmin} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow-sm">
+                      <span>Admin Dashboard</span>
+                      <ExternalLink className="w-5 h-5" />
                     </a>
                   )}
                 </div>
@@ -355,11 +355,11 @@ export default function ProjectsProfessionalCards() {
                   </div>
 
                   <div className="mt-auto pt-4 flex items-center gap-3">
-                    <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3 py-2 rounded-md btn-split-window text-sm font-semibold shadow-sm">
+                    <a href={p.github} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm">
                       <Github className="w-4 h-4" /> Code
                     </a>
 
-                    <a href={p.live} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-3 py-2 rounded-md btn-split-window text-sm font-semibold shadow-sm">
+                    <a href={p.live} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm">
                       <ExternalLink className="w-4 h-4" /> Live
                     </a>
 
@@ -416,8 +416,8 @@ export default function ProjectsProfessionalCards() {
                 <p className="text-[#324a6b] dark:text-gray-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: modal.description }} />
 
                 <div className="mt-6 flex gap-3">
-                  <a href={modal.github} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-md btn-split-window font-semibold">View code <Github className="w-4 h-4" /></a>
-                  <a href={modal.live} className="inline-flex items-center gap-2 px-4 py-2 rounded-md btn-split-window font-semibold">Live demo <ExternalLink className="w-4 h-4" /></a>
+                  <a href={modal.github} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm">View code <Github className="w-4 h-4" /></a>
+                  <a href={modal.live} className="inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm">Live demo <ExternalLink className="w-4 h-4" /></a>
                 </div>
 
                 <div className="mt-6 flex flex-wrap gap-2">

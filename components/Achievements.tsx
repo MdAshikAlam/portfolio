@@ -22,7 +22,7 @@ const achievements = [
     icon: Code,
     title: "300+ DSA Problems Solved",
     description:
-      "Solved 300+ Data Structures and Algorithms problems on LeetCode, covering arrays, trees, graphs, dynamic programming, and system design patterns.",
+      "Solved 300+ Data Structures and Algorithms problems on LeetCode, covering arrays, trees, graphs, dynamic programming, system design patterns, and optimization techniques.",
   },
 ];
 
@@ -93,7 +93,7 @@ export default function AchievementsClassicRich() {
         <div className="mt-12 text-center">
           <a
             href="#projects"
-            className="inline-flex items-center gap-3 px-6 py-3 rounded-full btn-split-window font-semibold shadow"
+            className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow"
           >
             View My Work
           </a>

@@ -40,7 +40,7 @@ export default function NavigationClassic() {
           : "bg-transparent"
         }`}
     >
-      <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
           {/* Logo */}
           <a
@@ -51,11 +51,11 @@ export default function NavigationClassic() {
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#0b2545] to-[#123a6b] flex items-center justify-center shadow text-white">
               <span className="font-serif font-extrabold">MA</span>
             </div>
-            <div className="hidden sm:flex flex-col leading-tight">
+            <div className="hidden sm:flex flex-col leading-tight whitespace-nowrap">
               <span className="text-sm font-semibold text-[#0b2545] dark:text-white">
                 Md Ashik Alam
               </span>
-              <span className="text-xs text-[#6b7e94] dark:text-gray-400">
+              <span className="hidden xl:inline text-xs text-[#6b7e94] dark:text-gray-400">
                 Full-Stack Software Engineer
               </span>
             </div>
@@ -64,7 +64,7 @@ export default function NavigationClassic() {
           {/* Center Nav (Desktop) */}
           <nav
             aria-label="Primary navigation"
-            className="hidden md:flex gap-8 items-center"
+            className="hidden md:flex gap-3 xl:gap-6 items-center"
           >
             {navItems.map((item) => {
               const isActive = active === item.href;
@@ -108,9 +108,9 @@ export default function NavigationClassic() {
               )}
             </button>
 
-            <a
+             <a
               href="#contact"
-              className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full btn-split-window text-sm font-semibold shadow"
+              className="hidden md:inline-flex items-center justify-center gap-2 px-5 h-12 rounded-full btn-split-window text-sm font-semibold shadow"
             >
               Contact
             </a>
@@ -154,7 +154,7 @@ export default function NavigationClassic() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="block w-full text-center mt-3 px-4 py-2 rounded-full btn-split-window font-semibold"
+                className="flex w-full items-center justify-center mt-3 h-12 rounded-full btn-split-window font-semibold"
               >
                 Contact
               </a>

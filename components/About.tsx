@@ -87,7 +87,7 @@ export default function AboutClassicProfessional() {
             </div>
 
             <div className="mt-8">
-              <a href="#projects" className="inline-flex items-center gap-3 px-5 py-3 rounded-md btn-split-window font-semibold shadow">
+              <a href="#projects" className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow">
                 See Projects
                 <ArrowRight className="w-4 h-4 opacity-80" />
               </a>
@@ -107,36 +107,36 @@ export default function AboutClassicProfessional() {
                 </div>
 
                 <div className="space-y-4">
-                  <div className="p-4 rounded-lg bg-[#fffaf0] border border-[#f1e8cf]">
-                    <div className="text-xs text-[#6b7e94] uppercase tracking-wide">Experience</div>
-                    <div className="text-2xl font-extrabold text-[#0b2545] mt-1">{exp}+ Year</div>
+                  <div className="p-4 rounded-lg bg-[#fffaf0] dark:bg-[#d6b85a]/10 border border-[#f1e8cf] dark:border-[#d6b85a]/20">
+                    <div className="text-xs text-[#6b7e94] dark:text-gray-400 uppercase tracking-wide">Experience</div>
+                    <div className="text-2xl font-extrabold text-[#0b2545] dark:text-[#d6b85a] mt-1">{exp}+ Year</div>
                   </div>
 
-                  <div className="p-4 rounded-lg bg-white border border-gray-100">
+                  <div className="p-4 rounded-lg bg-white dark:bg-[#0b2545]/30 border border-gray-100 dark:border-gray-800">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="text-2xl font-extrabold text-[#0b2545]">{projects}+</div>
-                        <div className="text-xs text-[#6b7e94] uppercase tracking-wide">Projects</div>
+                        <div className="text-2xl font-extrabold text-[#0b2545] dark:text-white">{projects}+</div>
+                        <div className="text-xs text-[#6b7e94] dark:text-gray-400 uppercase tracking-wide">Projects</div>
                       </div>
-                      <Layers className="w-5 h-5 text-[#6b7e94]" />
+                      <Layers className="w-5 h-5 text-[#6b7e94] dark:text-gray-400" />
                     </div>
                   </div>
 
-                  <div className="p-4 rounded-lg bg-white border border-gray-100">
+                  <div className="p-4 rounded-lg bg-white dark:bg-[#0b2545]/30 border border-gray-100 dark:border-gray-800">
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="text-2xl font-extrabold text-[#0b2545]">{solved}+</div>
-                        <div className="text-xs text-[#6b7e94] uppercase tracking-wide">LeetCode</div>
+                        <div className="text-2xl font-extrabold text-[#0b2545] dark:text-white">{solved}+</div>
+                        <div className="text-xs text-[#6b7e94] dark:text-gray-400 uppercase tracking-wide">LeetCode</div>
                       </div>
-                      <Calendar className="w-5 h-5 text-[#6b7e94]" />
+                      <Calendar className="w-5 h-5 text-[#6b7e94] dark:text-gray-400" />
                     </div>
                   </div>
 
-                  <div className="p-4 rounded-lg bg-white border border-gray-100 text-sm text-[#324a6b]">Available for select opportunities • Open to remote roles</div>
+                  <div className="p-4 rounded-lg bg-white dark:bg-[#0b2545]/30 border border-gray-100 dark:border-gray-800 text-sm text-[#324a6b] dark:text-gray-300">Available for select opportunities • Open to remote roles</div>
                 </div>
 
                 <div className="mt-6">
-                  <a href="#contact" className="inline-flex items-center gap-3 w-full justify-center px-4 py-2 rounded-md btn-split-window font-semibold shadow">Contact</a>
+                  <a href="#contact" className="inline-flex items-center justify-center gap-3 w-full h-12 rounded-full btn-split-window font-semibold shadow">Contact</a>
                 </div>
               </div>
             </div>

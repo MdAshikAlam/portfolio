@@ -288,7 +288,7 @@ export default function ContactClassicProfessional() {
                 href="https://www.linkedin.com/in/mohammadashikalam/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 min-w-[130px] inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg btn-split-window text-sm font-semibold shadow-sm"
+                className="flex-1 min-w-[130px] inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm"
               >
                 <Linkedin className="w-4 h-4" /> LinkedIn
               </a>
@@ -296,7 +296,7 @@ export default function ContactClassicProfessional() {
                 href="https://github.com/MdAshikAlam/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex-1 min-w-[130px] inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg btn-split-window text-sm font-semibold shadow-sm"
+                className="flex-1 min-w-[130px] inline-flex items-center justify-center gap-2 px-4 h-12 rounded-full btn-split-window text-sm font-semibold shadow-sm"
               >
                 <Github className="w-4 h-4" /> GitHub
               </a>
@@ -545,7 +545,7 @@ export default function ContactClassicProfessional() {
                       whileHover={{ scale: 1.01 }}
                       whileTap={{ scale: 0.99 }}
                       disabled={status === "sending" || !isFormValid}
-                      className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-xl btn-split-window font-semibold shadow disabled:opacity-50 disabled:pointer-events-none min-w-[150px]"
+                      className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow disabled:opacity-50 disabled:pointer-events-none min-w-[150px]"
                     >
                       {status === "sending" ? (
                         <>

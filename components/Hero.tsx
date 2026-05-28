@@ -215,7 +215,7 @@ export default function Hero() {
                 rel="noreferrer"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 24px rgba(11,37,69,0.3)" }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl btn-split-window font-semibold text-sm shadow-lg"
+                className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-lg"
               >
                 <Github className="w-4 h-4" /> GitHub
               </motion.a>
@@ -226,7 +226,7 @@ export default function Hero() {
                 rel="noreferrer"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2.5 px-6 py-3 rounded-xl btn-split-window font-semibold text-sm shadow-sm"
+                className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-sm"
               >
                 <Linkedin className="w-4 h-4 text-[#0a66c2]" /> LinkedIn
               </motion.a>
@@ -235,7 +235,7 @@ export default function Hero() {
                 href="mailto:mdashikalam05@gmail.com"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl btn-split-window font-semibold text-sm shadow-sm"
+                className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-sm"
               >
                 <Mail className="w-4 h-4" /> Hire Me
               </motion.a>
@@ -343,7 +343,7 @@ export default function Hero() {
                       href="mailto:mdashikalam05@gmail.com"
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.97 }}
-                      className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl btn-split-window text-xs font-semibold shadow-sm"
+                      className="flex items-center justify-center gap-2 px-3 h-12 rounded-full btn-split-window text-xs font-semibold shadow-sm"
                     >
                       <Mail className="w-3.5 h-3.5" /> Email
                     </motion.a>
@@ -351,7 +351,7 @@ export default function Hero() {
                       href="tel:+918969411974"
                       whileHover={{ scale: 1.04 }}
                       whileTap={{ scale: 0.97 }}
-                      className="flex items-center justify-center gap-2 px-3 py-2.5 rounded-xl btn-split-window text-xs font-semibold shadow-sm"
+                      className="flex items-center justify-center gap-2 px-3 h-12 rounded-full btn-split-window text-xs font-semibold shadow-sm"
                     >
                       <Phone className="w-3.5 h-3.5" /> Call
                     </motion.a>
@@ -398,7 +398,7 @@ export default function Hero() {
 
               {/* Floating badge — LeetCode */}
               <motion.div
-                className="absolute -right-4 bottom-24 bg-white dark:bg-[#0b2545] border border-gray-100 dark:border-[#1a4a8a]
+                className="absolute -right-4 bottom-36 bg-white dark:bg-[#0b2545] border border-gray-100 dark:border-[#1a4a8a]
                   rounded-xl px-3 py-2 shadow-lg text-center min-w-[84px]"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
