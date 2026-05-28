@@ -7,18 +7,18 @@ import { Github, Linkedin, Mail, Phone, ArrowDown, MapPin, Briefcase } from "luc
 /* ─── Data ─────────────────────────────────────────────── */
 
 const roles = [
-  "Full-Stack Developer",
-  "Next.js · Node.js · MongoDB",
+  "Full-Stack Engineer",
+  "React.js · Next.js · Node.js",
   "Healthcare Tech Builder",
-  "BCA + MCA Graduate",
+  "Enterprise App Developer",
 ];
 
-const techStack = ["React", "Next.js", "Node.js", "MongoDB", "TypeScript", "Express"];
+const techStack = ["Next.js", "React.js", "TypeScript", "Node.js", "MongoDB", "Tailwind CSS"];
 
 const stats = [
-  { label: "Years Exp", value: "1+", desc: "@ Mobiloitte" },
-  { label: "Projects", value: "10+", desc: "Full-Stack" },
-  { label: "LeetCode", value: "300+", desc: "DSA Solved" },
+  { label: "Experience", value: "1+ Years", desc: "Production-grade dev" },
+  { label: "Projects", value: "10+", desc: "Built & deployed" },
+  { label: "LeetCode", value: "300+", desc: "DSA problems solved" },
 ];
 
 /* ─── Floating Orb ─────────────────────────────────────── */
@@ -143,7 +143,7 @@ export default function Hero() {
 
             {/* Greeting */}
             <motion.p variants={fadeUp} className="text-sm font-semibold tracking-widest uppercase text-[#6b7e94] dark:text-gray-400 mb-3">
-              Hello, I&apos;m
+              Full-Stack Engineer
             </motion.p>
 
             {/* Name */}
@@ -161,6 +161,10 @@ export default function Hero() {
                 />
               </span>
             </motion.h1>
+
+            <motion.h2 variants={fadeUp} className="text-xl md:text-2xl font-serif font-bold text-[#324a6b] dark:text-gray-200 mt-2 mb-4">
+              Building Scalable Modern Web Applications
+            </motion.h2>
 
             {/* Role location row */}
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4 mt-3 mb-5 text-sm text-[#6b7e94] dark:text-gray-400">
@@ -190,10 +194,9 @@ export default function Hero() {
 
             {/* Description */}
             <motion.p variants={fadeUp} className="text-base md:text-lg text-[#324a6b] dark:text-gray-300 max-w-xl leading-relaxed mb-8">
-              Full-stack developer specializing in{" "}
-              <span className="font-semibold text-[#0b2545] dark:text-white">healthcare</span> and{" "}
-              <span className="font-semibold text-[#0b2545] dark:text-white">enterprise</span> web apps.
-              Building production Next.js &amp; Node.js services at Mobiloitte - BCA + MCA (80%) graduate.
+              Full-stack developer specializing in Next.js, React.js, Node.js, and MongoDB with hands-on experience building production-grade healthcare and enterprise applications at Mobiloitte Technologies.
+              <br /><br />
+              Focused on scalable systems, responsive user experiences, REST APIs, SEO optimization, and modern full-stack architectures.
             </motion.p>
 
             {/* Stats */}
@@ -210,34 +213,32 @@ export default function Hero() {
             {/* CTA Buttons */}
             <motion.div variants={fadeUp} className="flex flex-wrap gap-3 mb-8">
               <motion.a
-                href="https://github.com/MdAshikAlam/"
-                target="_blank"
-                rel="noreferrer"
+                href="#projects"
                 whileHover={{ scale: 1.04, boxShadow: "0 0 24px rgba(11,37,69,0.3)" }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-lg"
               >
-                <Github className="w-4 h-4" /> GitHub
+                View Projects
               </motion.a>
 
               <motion.a
-                href="https://www.linkedin.com/in/mohammadashikalam/"
+                href="https://raw.githubusercontent.com/MdAshikAlam/my-resume-/main/Ashik_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-sm"
               >
-                <Linkedin className="w-4 h-4 text-[#0a66c2]" /> LinkedIn
+                Download Resume
               </motion.a>
 
               <motion.a
-                href="mailto:mdashikalam05@gmail.com"
+                href="#contact"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
                 className="inline-flex items-center justify-center gap-2.5 px-6 h-12 rounded-full btn-split-window font-semibold text-sm shadow-sm"
               >
-                <Mail className="w-4 h-4" /> Hire Me
+                Contact Me
               </motion.a>
             </motion.div>
 
@@ -331,7 +332,7 @@ export default function Hero() {
                     bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/20
                     text-emerald-700 dark:text-emerald-400 text-xs font-semibold">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    Available for opportunities
+                    Available for Full-Time & Remote Opportunities
                   </div>
 
                   {/* Divider */}

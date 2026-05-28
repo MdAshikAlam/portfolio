@@ -28,7 +28,7 @@ export default function EducationClassicProfessional() {
   const inView = useInView(ref, { once: true, margin: "-120px" });
 
   return (
-    <section id="education" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 bg-[#f7f5f0] dark:bg-[#071428]">
+    <section id="education" ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-[#071428]">
       <div className="max-w-7xl mx-auto">
         <motion.header
           initial={{ opacity: 0, y: 8 }}

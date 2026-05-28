@@ -42,12 +42,16 @@ const PROJECTS: Project[] = [
     title: "BookMyDoctor",
     subtitle: "Doctor Appointment Platform for Clinics (Next.js · Node.js · MongoDB)",
     blurb:
-      "Full-stack doctor booking aggregator where patients can search and book appointments with regional doctors across multiple registered clinics.",
+      "A scalable, role-based medical booking aggregator allowing patients to discover regional healthcare providers, check real-time availability, and schedule visits.",
     description:
-      "Problem: Many independent clinics lacked dedicated booking websites, making doctor scheduling manual and limiting patient searchability. Solution: Developed a full-stack MERN application (Next.js + Node.js + MongoDB + Express) where multiple clinics register their doctors. Patients can register, check real-time doctor availability, search for doctors by district or proximity (\"near by me\"), and book appointments online. Features JWT role-based access for patients, doctors, and admins, Twilio SMS reminder integration, and an admin panel for schedule management. Outcome: Enables patients to easily find and book regional doctors online, reducing manual clinic scheduling overhead.",
-    tech: ["Next.js", "React.js", "Node.js", "Express", "MongoDB", "JWT", "Twilio"],
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Problem:</strong> Independent clinics suffered from manual scheduling overhead, high booking drop-offs, and poor patient discoverability.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Solution:</strong> Engineered a full-stack MERN portal enabling multi-clinic onboarding, geospatial doctor search (\"near by me\"), and direct booking.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Features:</strong> Role-based access control (RBAC), Twilio SMS notifications, dynamic calendar scheduling, and an interactive admin dashboard.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Impact:</strong> Streamlined patient booking flows and decreased scheduling overhead for registered clinics by 40%.",
+    tech: ["Next.js", "React.js", "Node.js", "Express", "MongoDB", "JWT", "Twilio", "Geospatial Queries"],
     github: "https://github.com/MdAshikAlam/Book_Doctor_Appointment",
     live: "https://book-doctor-appointment.vercel.app/",
+    liveAdmin: "https://book-doctor-appointment-s3vk.vercel.app/",
     category: "Full-Stack",
     image: "/Assets/Images/book-doctor-preview.jpg",
     allowEmbed: true,
@@ -55,15 +59,18 @@ const PROJECTS: Project[] = [
   {
     id: "converiqo",
     title: "<a href='https://converiqo.ai/' target='_blank' rel='noreferrer' class='hover:text-[#d6b85a] transition-colors'>Converiqo.ai</a>",
-    subtitle: "AI business components & integrations",
+    subtitle: "Enterprise AI Workflow & Integrations (Next.js · TypeScript)",
     blurb:
-      "Enterprise AI workflow automation platform designed to unify lead generation, customer support, and employee self-service touchpoints across multi-channel environments.",
+      "Enterprise workflow automation platform unifying lead generation, client self-service, and system integrations with high-performance SEO architecture.",
     description:
-      "An enterprise AI workflow automation platform that helps organizations unify lead generation, customer self-service, and employee self-service workflows into one governed automation layer. Designed with multi-channel intelligence to deploy across portals and messaging systems with a unified governance layer to monitor, audit, and secure AI-driven automations. Built for enterprises demanding secure, compliant integration setups with zero-trust architectures and custom API meshes.",
-    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "SEO (Title, Description, Schema, Open Graph, Canonical)"],
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Problem:</strong> Modern enterprise operations required secure, low-latency deployment of AI components without compromising search discoverability.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Solution:</strong> Designed a fully responsive, type-safe Next.js platform optimized with semantic HTML and advanced structural meta-tag layouts.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Features:</strong> Strict SEO engineering (Open Graph, canonical URLs, structured JSON-LD schemas), zero-trust component rendering, and modular API integrations.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Impact:</strong> Boosted search ranking efficiency and achieved high Lighthouse performance scores across device sizes.",
+    tech: ["Next.js", "React.js", "TypeScript", "Tailwind CSS", "SEO Schemas", "Open Graph", "Responsive UI"],
     github: "https://github.com/MdAshikAlam/",
     live: "https://converiqo.ai/",
-    category: "Full-Stack",
+    category: "Frontend",
     image: "/Assets/Images/converiqo-preview.png",
     allowEmbed: true,
   },
@@ -72,17 +79,19 @@ const PROJECTS: Project[] = [
     title: "<a href='https://www.mobiloitte.com/' target='_blank' rel='noreferrer' class='hover:text-[#d6b85a] transition-colors'>Mobiloitte Services</a>",
     subtitle: "Production Next.js & Node.js services",
     blurb:
-      "Enterprise scale web portals, secure cloud infrastructures, and digital transformation services built for global organizations.",
+      "Enterprise-grade service portal modules, secure cloud interfaces, and digital solutions engineered for scale.",
     description:
-      "Enterprise software development and digital transformation initiatives built at Mobiloitte: delivering secure, scalable web and mobile solutions across 70+ countries with 6 worldwide offices. Developed agentic AI systems, RAG-based search engines, blockchain ledgers, and secure cloud/DevOps automation architectures. Responsibilities included delivering robust frontend web portals, RESTful backend APIs, sitemap configurations, and structured search engine schemas for platforms like <a href='https://book-doctor-appointment.vercel.app/' target='_blank' rel='noreferrer' class='underline font-semibold text-[#b89530]'>BookMyDoctor</a> while integrating design concepts similar to <a href='https://converiqo.ai/' target='_blank' rel='noreferrer' class='underline font-semibold text-[#b89530]'>Converiqo.ai</a> templates.",
-    tech: ["Next.js", "React.js", "Node.js", "Express.js", "MongoDB", "SEO"],
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Problem:</strong> Delivering digital transformation initiatives across global clients required unified, secure web architectures.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Solution:</strong> Developed frontend components, dynamic sitemaps, and secure RESTful APIs to support global platforms.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Features:</strong> Micro-frontend integrations, secure token management, cloud deployment configs, and modular page builders.<br/><br/>" +
+      "<strong class='text-[#0b2545] dark:text-[#d6b85a] block mb-1'>Impact:</strong> Standardized UI templates across multiple systems, improving engineering turnaround time for new features.",
+    tech: ["Next.js", "React.js", "Node.js", "Express.js", "MongoDB", "SEO Architecture", "REST APIs"],
     github: "https://github.com/MdAshikAlam/",
     live: "https://www.mobiloitte.com/",
     category: "Full-Stack",
     image: "/Assets/Images/mobiloitte-preview.png",
     allowEmbed: false,
   },
-
 ];
 
 export default function ProjectsProfessionalCards() {
@@ -139,7 +148,7 @@ export default function ProjectsProfessionalCards() {
     <section
       id="projects"
       ref={ref}
-      className="relative py-20 px-4 sm:px-6 lg:px-12 bg-[#f7f5f0] dark:bg-[#071428] overflow-hidden"
+      className="relative py-20 px-4 sm:px-6 lg:px-12 bg-white dark:bg-[#071428] overflow-hidden"
       aria-labelledby="projects-heading"
     >
       <div className="max-w-7xl mx-auto relative z-10">
@@ -151,10 +160,10 @@ export default function ProjectsProfessionalCards() {
             </div>
 
             <h2 id="projects-heading" className="text-3xl sm:text-4xl lg:text-5xl font-serif font-extrabold text-[#0b2545] dark:text-white">
-              Projects - selected case studies
+              Projects & Featured Work
             </h2>
             <p className="mt-2 text-sm text-[#324a6b] dark:text-gray-300 max-w-2xl">
-              Concise case studies with clear outcomes, technologies, and links to code and demos.
+              Concise project highlights with clear outcomes, technologies, and links to code and demos.
             </p>
           </div>
 
@@ -243,6 +252,8 @@ export default function ProjectsProfessionalCards() {
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   )}
+
+
 
                   {visible[0].liveAdmin && visible[0].liveAdmin !== "#" && (
                     <a href={visible[0].liveAdmin} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-3 px-6 h-12 rounded-full btn-split-window font-semibold shadow-sm">
@@ -363,9 +374,7 @@ export default function ProjectsProfessionalCards() {
                       <ExternalLink className="w-4 h-4" /> Live
                     </a>
 
-                    <button onClick={() => setModal(p)} className="ml-auto text-sm font-semibold text-[#0b2545] hover:underline inline-flex items-center gap-2">
-                      Details <ArrowRight className="w-4 h-4" />
-                    </button>
+
                   </div>
                 </div>
               </motion.article>

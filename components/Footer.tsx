@@ -92,9 +92,7 @@ export default function FooterClassicProfessional() {
           className="text-center text-sm text-gray-400"
         >
           <p>
-            © {currentYear} Md Ashik Alam. All rights reserved. Crafted with{" "}
-            <span className="text-[#d6b85a] font-semibold">passion</span> and{" "}
-            <span className="text-[#d6b85a] font-semibold">precision</span>.
+            © 2026 Md Ashik Alam. Crafted with performance, precision, and modern engineering.
           </p>
         </motion.div>
       </div>

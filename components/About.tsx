@@ -2,28 +2,38 @@
 
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { Code, Rocket, Target, Heart, ArrowRight, Briefcase, Calendar, Layers } from "lucide-react";
+import { Code, Server, Key, Search, Layout, Briefcase, ArrowRight, Calendar, Layers } from "lucide-react";
 
 const highlights = [
   {
     Icon: Code,
-    title: "Full‑Stack Development",
-    description: "End-to-end apps with React, Next.js, Node.js, and MongoDB - from multi-clinic doctor booking systems to real-time quiz platforms.",
+    title: "Full-Stack Web Development",
+    description: "Building end-to-end web applications with clean, maintainable architecture using modern React, Next.js, and Node.js.",
   },
   {
-    Icon: Rocket,
-    title: "Modern Tooling",
-    description: "TypeScript, Vercel, CI/CD, Swagger APIs, and pragmatic serverless deployment in production environments.",
+    Icon: Server,
+    title: "REST API Development",
+    description: "Designing robust, secure, and high-performance RESTful APIs, serverless backends, and modular microservices.",
   },
   {
-    Icon: Target,
-    title: "Problem Solving",
-    description: "300+ DSA problems solved on LeetCode; NIMCET All India Rank 1272 among 60,000+ applicants.",
+    Icon: Key,
+    title: "Authentication & Authorization",
+    description: "Implementing secure authentication protocols, OAuth logins, JWT tokens, and fine-grained role-based access control.",
   },
   {
-    Icon: Heart,
-    title: "Human‑Centered UX",
-    description: "Accessible, responsive interfaces - including booking UIs for clinic patients and content systems for media publishers.",
+    Icon: Search,
+    title: "SEO Optimization",
+    description: "Structuring search schemas, metadata, sitemaps, Open Graph protocols, and optimizing performance for organic visibility.",
+  },
+  {
+    Icon: Layout,
+    title: "Responsive UI Engineering",
+    description: "Creating fluid, production-level interfaces that scale seamlessly across device profiles with optimized client performance.",
+  },
+  {
+    Icon: Briefcase,
+    title: "Enterprise Application Development",
+    description: "Engineering scalable solutions tailored for complex enterprise workflows, business logic, and backend integrations.",
   },
 ];
 
@@ -54,11 +64,11 @@ export default function AboutClassicProfessional() {
   const solved = useCountUp(300, inView, 1200);
 
   return (
-    <section id="about" ref={ref} className="relative py-20 px-4 sm:px-6 lg:px-8 bg-[#f7f5f0] dark:bg-[#071428]">
+    <section id="about" ref={ref} className="relative py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-[#071428]">
       <div className="max-w-7xl mx-auto">
         <motion.header initial={{ opacity: 0, y: 8 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#0b2545] dark:text-white">About</h2>
-          <p className="mt-3 text-sm md:text-base text-[#324a6b] dark:text-gray-300 max-w-2xl mx-auto">Full-stack developer with a passion for healthcare and education technology.</p>
+          <h2 className="text-4xl md:text-5xl font-serif font-extrabold text-[#0b2545] dark:text-white">About Me</h2>
+          <p className="mt-3 text-sm md:text-base text-[#324a6b] dark:text-gray-300 max-w-2xl mx-auto">Full-stack engineer specialized in creating production-grade web solutions.</p>
           <hr className="mt-6 w-28 mx-auto border-t-2 border-[#d6b85a] opacity-90" />
         </motion.header>
 
@@ -66,8 +76,8 @@ export default function AboutClassicProfessional() {
           {/* Left: narrative */}
           <motion.div initial={{ opacity: 0, x: -10 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.7 }} className="lg:col-span-8">
             <div className="prose max-w-none dark:prose-invert text-[#0b2545] dark:text-gray-200">
-              <p className="text-xl font-semibold">Full-Stack Software Engineer specializing in healthcare and enterprise web applications.</p>
-              <p className="text-base text-[#324a6b] dark:text-gray-300">I hold a BCA and an MCA (BVICAM, First Class - 80%) and currently work at Mobiloitte Technologies, where I build production Next.js frontends and Node.js/Express APIs, implement SEO strategies, and integrate third-party services like Twilio. I care deeply about accessible interfaces and maintainable code - my projects span telehealth booking systems, blockchain-backed donation trackers, and real-time multiplayer platforms.</p>
+              <p className="text-xl font-semibold">I’m a Full-Stack Developer currently working at Mobiloitte Technologies, where I build scalable enterprise and healthcare applications using modern JavaScript technologies.</p>
+              <p className="text-base text-[#324a6b] dark:text-gray-300">I specialize in building responsive frontend systems, REST APIs, authentication workflows, admin dashboards, and SEO-optimized web applications using Next.js, React.js, Node.js, Express.js, and MongoDB. I enjoy creating clean user experiences, maintainable architectures, and performance-focused applications that solve real-world problems.</p>
             </div>
 
             <div className="mt-8 grid sm:grid-cols-2 gap-6">
